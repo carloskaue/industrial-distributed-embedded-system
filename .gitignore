@@ -1,55 +1,47 @@
-# Prerequisites
-*.d
-
-# Object files
+# Compilação padrão C/C++
 *.o
-*.ko
 *.obj
-*.elf
-
-# Linker output
-*.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
 *.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+*.a
+*.elf
+*.bin
 *.hex
+*.out
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# CMake / Ninja / Make
+build/
+bin/
+CMakeCache.txt
+CMakeFiles/
+Makefile.in
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# ESP-IDF
+.espressif/
+sdkconfig
+sdkconfig.old
+dependencies.lock
 
-# debug information files
-*.dwo
+# TI Code Composer Studio / Eclipse
+.metadata/
+.settings/
+*.d
+*.pp
+*.cproject
+*.project
+
+# Buildroot
+firmware/node1-gateway-rpi/buildroot/output/
+firmware/node1-gateway-rpi/buildroot/dl/
+
+# Python (Scripts HIL)
+__pycache__/
+*.pyc
+.pytest_cache/
+venv/
+env/
+
+# IDEs e Sistema
+.vscode/
+.idea/
+.DS_Store
+*.swp
